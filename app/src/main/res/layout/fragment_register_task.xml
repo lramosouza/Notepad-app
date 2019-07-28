@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.lsouza.notepad.fragment.SaveTaskFragment">
+
+    <LinearLayout
+        android:id="@+id/containterForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titulo da Task" />
+
+
+        <EditText
+            android:id="@+id/etDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:hint="Descrição ..." />
+
+        <CheckBox
+            android:id="@+id/chkPrioridade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_prioridade" />
+
+        <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/colorAccent"
+                android:text="@string/salvarTask"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+</FrameLayout>
